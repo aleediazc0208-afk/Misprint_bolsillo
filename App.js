@@ -27,7 +27,7 @@ export default function App() {
   
   const agregarTarea = () => {
     if (titulo.trim() === '') {
-      setError('⚠️ Escribe un título para poder agregar la tarea.');
+      setError(' Escribe un título para poder agregar la tarea.');
       Alert.alert('Advertencia', 'Escribe un título para poder agregar la tarea.');
       return;
     }
@@ -184,7 +184,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* HU05 - Lista */}
+      
       <FlatList
         data={tareas}
         keyExtractor={(item) => item.id}
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
   appNombre: { color: '#211f1f', fontSize: 22, fontWeight: '800' },
   headerTxt: { color: '#131313', fontSize: 13, marginTop: 1 },
 
-  // Resumen
+  
   resumen: {
     backgroundColor: '#e4e9f0',
     borderRadius: 20,
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
   barraRelleno: { height: 8, backgroundColor: '#272827', borderRadius: 4 },
   porcentaje: { color: '#212224', fontSize: 12, marginTop: 6, textAlign: 'center' },
 
-  // Formulario
+  
   form: {
     backgroundColor: '#e0e3e7',
     borderRadius: 20,
@@ -296,7 +296,7 @@ const styles = StyleSheet.create({
 
   listaTitulo: { color: '#1f2023', fontSize: 18, fontWeight: '800', marginBottom: 10 },
 
-  // Tarjetas
+  
   card: {
     backgroundColor: '#f3f4f7',
     borderRadius: 16,
@@ -348,7 +348,7 @@ const styles = StyleSheet.create({
   },
   btnEliminarTxt: { color: '#dc2626', fontWeight: '700', fontSize: 13 },
 
-  // Vacío
+  
   vacioBox: { alignItems: 'center', paddingVertical: 30 },
   vacio: { color: '#4b5563', fontSize: 15 },
 });
